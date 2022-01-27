@@ -1,0 +1,44 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+img[src=""] {
+    display: none;
+}
+
+.bg-img {
+    position: absolute;
+    top: 0;
+    background: black;
+    z-index: 1;
+}
+
+.bg-img img {
+    opacity: 0.3;
+}
+
+.relative-items {
+    position: relative;
+    z-index: 10;
+}
+
+.title-style {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.3), #00000000);
+}
+
+.tbody-style {
+    background: #cbcbcbc7;
+    backdrop-filter: blur(1px);
+}
+
+.prof-img {
+    width: 30px;
+    height: 25px;
+    border-radius: 4px;
+}
+
+.table {
+    --bs-table-hover-color: #e6e6e7 !important;
+    --bs-table-hover-bg: rgb(0 0 0 / 40%) !important;
+}
