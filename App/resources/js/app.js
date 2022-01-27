@@ -20,22 +20,19 @@
     // Show the employees from API
     // 
     $("#show").on("click", function(e) {
-        var timer;
 
         $.ajax({
             type: "GET",
             url: "http://dummy.restapiexample.com/api/v1/employees",
 
             error: function(e) {
-                clearTable();
                 errorMsg();
             },
 
             success: function(response) {
 
-                if (response.status == 'success') {
+                if (response.status === 'success') {
 
-                    clearTimeout(timer);
                     clearTable();
                     document.getElementById('show').classList.add('disabled');
                     document.getElementById('hide').classList.add('d-none');
@@ -70,7 +67,6 @@
                     }
 
                 } else {
-                    clearTable();
                     errorMsg();
                 }
 
@@ -82,6 +78,9 @@
         // The error message
         // 
         function errorMsg() {
+            
+            clearTable();
+
             var responseJSON =
                 `<tr>
                     <th colspan="5" class="text-center text-danger">Something went wrong! Please try again.</th>
@@ -89,11 +88,8 @@
 
             var table = document.getElementById('results');
 
-            table.innerHTML += responseJSON;
+            table.innerHTML = responseJSON;
 
-            timer = setTimeout(function() {
-                clearTable();
-            }, 5000);
         }
 
         e.preventDefault();

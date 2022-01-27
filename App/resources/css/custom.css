@@ -8,7 +8,7 @@ img[src=""] {
 }
 
 .bg-img {
-    position: absolute;
+    position: fixed;
     top: 0;
     background: black;
     z-index: 1;
