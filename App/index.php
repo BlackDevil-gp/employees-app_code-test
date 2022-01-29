@@ -10,19 +10,19 @@
     <title>Employees' Application</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/resources/css/custom.css" rel="stylesheet">
+    <link href="resources/css/custom.css" rel="stylesheet">
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
 
-    <link rel="icon" href="/resources/images/svg/favicon.svg" type="image/x-icon">
+    <link rel="icon" href="resources/images/svg/favicon.svg" type="image/x-icon">
 
 </head>
 
 <body>
     <!-- Background Image -->
     <div class="bg-img">
-        <img class="w-100" src="/resources/images/bg_img.jpg" alt="office-image">
+        <img class="w-100" src="resources/images/bg_img.jpg" alt="office-image">
     </div>
 
     <!-- Title -->
@@ -35,13 +35,13 @@
         <div class="d-flex flex-wrap justify-content-between">
 
             <button id="show" class="btn btn-outline-success text-white fw-bold px-4">Show me</button>
-            <button id="hide" class="btn btn-outline-danger text-white fw-bold px-4 d-none">Hide</button>
+            <button id="clear" class="btn btn-outline-danger text-white fw-bold px-4 d-none">Clear</button>
 
         </div>
     </div>
 
     <!-- Table -->
-    <div class="container mt-3 relative-items">
+    <div class="container mt-3 mb-5 relative-items">
         <table class="table table-striped border table-hover" style="box-shadow: 0 0 6px 0px black;">
 
             <thead style="background: #e1e1e1;">
@@ -63,6 +63,6 @@
 
 </body>
 
-<script src="/resources/js/app.js"></script>
+<script src="resources/js/app.js"></script>
 
 </html>
