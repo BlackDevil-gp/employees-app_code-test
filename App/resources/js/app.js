@@ -13,7 +13,7 @@
 
     /* Show the employees from API */ 
     $("#show").on("click", function() {
-
+        /* Take the table's id */
         var table = document.getElementById('results');
 
         $.ajax({
