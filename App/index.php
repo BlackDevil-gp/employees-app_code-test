@@ -27,14 +27,23 @@
 
     <!-- Title -->
     <div class="p-2 relative-items title-style">
-        <h1 class="text-center"><a class="text-decoration-none text-white" href="/">Employees' List</a></h1>
+        <h1 class="text-center"><a class="text-decoration-none text-white title-font-style" href="/">Employees' List</a></h1>
     </div>
 
     <!-- Buttons -->
     <div class="container mt-5 relative-items">
         <div class="d-flex flex-wrap justify-content-between">
 
-            <button id="show" class="btn btn-outline-success text-white fw-bold px-4">Show me</button>
+        <div class="d-flex flex-wrap">
+                <button id="show" class="btn btn-outline-success text-white fw-bold px-4 me-4">Show me</button>
+
+                <select class="form select rounded-3 px-2" name="showOptions" id="showOptions">
+                    <option value="5" selected>5 rows</option>
+                    <option value="15">15 rows</option>
+                    <option value="all">All rows</option>
+                </select>
+
+            </div>
             <button id="clear" class="btn btn-outline-danger text-white fw-bold px-4 d-none">Clear</button>
 
         </div>
@@ -57,8 +66,9 @@
             <tbody id="results" class="tbody-style">
 
             </tbody>
-
         </table>
+
+        <button class="btn btn-info d-none" id="showMore"><span class="spinner-size"></span> Show More</button>
     </div>
 
 </body>

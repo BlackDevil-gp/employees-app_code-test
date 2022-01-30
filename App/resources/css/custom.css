@@ -24,7 +24,17 @@ img[src=""] {
 }
 
 .title-style {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.3), #00000000);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.5), #00000000);
+    height: 72px;
+}
+
+.title-font-style {
+    transition: 0.4s ease;
+}
+
+.title-font-style:hover {
+    text-shadow: 0px 10px 5px black;
+    font-size: 42px;
 }
 
 .tbody-style {
@@ -41,4 +51,10 @@ img[src=""] {
 .table {
     --bs-table-hover-color: #e6e6e7 !important;
     --bs-table-hover-bg: rgb(0 0 0 / 40%) !important;
+}
+
+.spinner-size {
+    font-size: 12px;
+    width: 18px;
+    height: 18px;
 }
